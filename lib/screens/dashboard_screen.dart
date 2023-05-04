@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../widgets/top_corner_design.dart';
+
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
 
@@ -17,14 +19,10 @@ class DashboardScreen extends StatelessWidget {
             child: Stack(
               clipBehavior: Clip.none,
               children: <Widget>[
-                Positioned(
+                const Positioned(
                   top: 0,
                   left: 0,
-                  child: Image.asset(
-                    'assets/dashboard_top_design.png',
-                    fit: BoxFit.cover,
-                    width: 300,
-                  ),
+                  child: TopCornerDesign(),
                 ),
                 Positioned(
                   bottom: 0,
